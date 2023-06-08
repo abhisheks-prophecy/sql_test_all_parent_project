@@ -21,30 +21,7 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/test_sql_databricks_model_1:
     name: test_sql_databricks_model_1
-    schema:
-      providerType: Databricks
-      fields:
-      - name: NZHSC_Level_2_Code_HS4
-        dataType:
-          type: Integer
-      - name: NZHSC_Level_1_Code_HS2
-        dataType:
-          type: Integer
-      - name: NZHSC_Level_2
-        dataType:
-          type: String
-      - name: NZHSC_Level_1
-        dataType:
-          type: String
-      - name: Status_HS4
-        dataType:
-          type: String
-      - name: c_dbt_utils
-        dataType:
-          type: String
-      - name: c_concat_column_function
-        dataType:
-          type: String
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -57,30 +34,7 @@ sqlModels:
     modifiedAt: '2023-06-08 06:00:44'
   .prophecy/metadata/sqlmodels/test_sql_databricks_model_2:
     name: test_sql_databricks_model_2
-    schema:
-      providerType: Databricks
-      fields:
-      - name: NZHSC_Level_2_Code_HS4
-        dataType:
-          type: Integer
-      - name: NZHSC_Level_1_Code_HS2
-        dataType:
-          type: Integer
-      - name: NZHSC_Level_2
-        dataType:
-          type: String
-      - name: NZHSC_Level_1
-        dataType:
-          type: String
-      - name: Status_HS4
-        dataType:
-          type: String
-      - name: c_dbt_utils
-        dataType:
-          type: String
-      - name: c_concat_column_function
-        dataType:
-          type: String
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:

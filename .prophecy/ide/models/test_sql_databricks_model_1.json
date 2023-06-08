@@ -32,88 +32,10 @@
       "ports" : {
         "inputs" : [ {
           "id" : "QQel7txS",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "Join_1"
         } ],
         "outputs" : [ {
           "id" : "Kpn172lF",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -140,45 +62,6 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "g8_LHIOgE3wjE8jsQAg06",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -316,45 +199,6 @@
       "ports" : {
         "inputs" : [ {
           "id" : "5QuSGFamu8xQqBPrRq_UE$$FUfX4iMGLigbrjIHdNh4h",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "in0"
         }, {
           "id" : "aMqskc8_KjYjfSjfs6hYj$$IcJBnAiV3L-p5WAhHKxnb",
@@ -406,45 +250,6 @@
         } ],
         "outputs" : [ {
           "id" : "0gxP0CwvpVQOxwPtuvzcv$$w53uv9fVydM5sMjP8J-hm",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

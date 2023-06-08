@@ -123,88 +123,10 @@
       "ports" : {
         "inputs" : [ {
           "id" : "duEd9EuVrMA5TheAkAQm3$$a8g6QVlqZx9xg5p441yRp",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "G9DkXaZO2GaZt_WxFNJEc$$BXyaX8mkxDZUtv9ZwuDD_",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -235,88 +157,10 @@
       "ports" : {
         "inputs" : [ {
           "id" : "NGDWpM1ZUyWPIoNl_fwGz",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "Limit_1"
         } ],
         "outputs" : [ {
           "id" : "gKp4Wu3W8O4-SBwWiot4u$$ZhoNK6Yxo8gztjO9SddBa",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -345,88 +189,10 @@
       "ports" : {
         "inputs" : [ {
           "id" : "ROfn7NPr",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "qa_all_not_null_base_1"
         } ],
         "outputs" : [ {
           "id" : "vHcxebQ0",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -518,45 +284,6 @@
         } ],
         "outputs" : [ {
           "id" : "TgV3x_iuiQvEQcKo9XQ0m$$TT2-vf6-dpsnY7qK8SaOb",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "NZHSC_Level_2_Code_HS4",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_1_Code_HS2",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "NZHSC_Level_2",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "NZHSC_Level_1",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "Status_HS4",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_dbt_utils",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_concat_column_function",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

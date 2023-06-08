@@ -1,0 +1,34 @@
+name: SQL_Parent_All
+description: ''
+version: 0.0.1
+author: null
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-06-08 06:00:03'
+  modifiedAt: '2023-06-08 06:00:03'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2023-06-08 06:00:03'
+  modifiedAt: '2023-06-08 06:00:03'
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}

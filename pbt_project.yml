@@ -24,48 +24,27 @@ sqlModels:
     schema:
       providerType: Databricks
       fields:
-      - name: c_tinyint
-        dataType:
-          type: TinyInt
-      - name: c_smallint
-        dataType:
-          type: SmallInt
-      - name: c_int
+      - name: NZHSC_Level_2_Code_HS4
         dataType:
           type: Integer
-      - name: c_bigint
+      - name: NZHSC_Level_1_Code_HS2
         dataType:
-          type: Bigint
-      - name: c_float
-        dataType:
-          type: Float
-      - name: c_double
-        dataType:
-          type: Float
-      - name: c_string
+          type: Integer
+      - name: NZHSC_Level_2
         dataType:
           type: String
-      - name: c_boolean
+      - name: NZHSC_Level_1
         dataType:
-          type: Boolean
-      - name: c_array
+          type: String
+      - name: Status_HS4
         dataType:
-          type: Array
-          dataType:
-            type: String
-      - name: c_struct
+          type: String
+      - name: c_dbt_utils
         dataType:
-          type: Struct
-          fields:
-          - name: city
-            dataType:
-              type: String
-          - name: state
-            dataType:
-              type: String
-          - name: pin
-            dataType:
-              type: Bigint
+          type: String
+      - name: c_concat_column_function
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -117,49 +96,28 @@ sqlModels:
     schema:
       providerType: Databricks
       fields:
-      - name: c_tinyint
-        dataType:
-          type: TinyInt
-      - name: c_smallint
-        dataType:
-          type: SmallInt
-      - name: c_int
-        dataType:
-          type: Integer
-      - name: c_bigint
-        dataType:
-          type: Bigint
-      - name: c_float
-        dataType:
-          type: Float
-      - name: c_double
-        dataType:
-          type: Float
-      - name: c_string
+      - name: c_if
         dataType:
           type: String
-      - name: c_boolean
+      - name: code
         dataType:
-          type: Boolean
-      - name: c_array
+          type: String
+      - name: service_label
         dataType:
-          type: Array
-          dataType:
-            type: String
-      - name: c_struct
+          type: String
+      - name: NZHSC_Level_2_Code_HS4
         dataType:
-          type: Struct
-          fields:
-          - name: city
-            dataType:
-              type: String
-          - name: state
-            dataType:
-              type: String
-          - name: pin
-            dataType:
-              type: Bigint
-      - name: c_if
+          type: Integer
+      - name: NZHSC_Level_1_Code_HS2
+        dataType:
+          type: Integer
+      - name: NZHSC_Level_2
+        dataType:
+          type: String
+      - name: NZHSC_Level_1
+        dataType:
+          type: String
+      - name: Status_HS4
         dataType:
           type: String
     description: null
@@ -257,86 +215,7 @@ sqlSeeds:
     - seeds/service_classification_test.csv
     createdAt: '2023-06-08 06:08:21'
     modifiedAt: '2023-06-08 06:08:21'
-sqlSources:
-  .prophecy/metadata/sqlsources/spark_catalog_qa_database:
-    name: spark_catalog.qa_database
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - prophecy-sources/sources.yml
-    createdAt: '2023-06-08 06:04:41'
-    modifiedAt: '2023-06-08 06:04:41'
-    tables:
-    - name: all_type_non_partitioned
-      schema:
-        providerType: databricks
-        fields:
-        - name: c_tinyint
-          dataType:
-            type: TinyInt
-        - name: c_smallint
-          dataType:
-            type: SmallInt
-        - name: c_int
-          dataType:
-            type: Integer
-        - name: c_bigint
-          dataType:
-            type: Bigint
-        - name: c_float
-          dataType:
-            type: Float
-        - name: c_double
-          dataType:
-            type: Double
-        - name: c_string
-          dataType:
-            type: String
-        - name: c_boolean
-          dataType:
-            type: Boolean
-        - name: c_array
-          dataType:
-            type: Array
-            dataType:
-              type: String
-        - name: c_struct
-          dataType:
-            type: Struct
-            fields:
-            - name: city
-              dataType:
-                type: String
-            - name: state
-              dataType:
-                type: String
-            - name: pin
-              dataType:
-                type: Bigint
-      description: null
-      author: abhisheks+e2etests@prophecy.io
-      createdAt: '2023-06-08 06:04:41'
-      modifiedAt: '2023-06-08 06:04:41'
-  .prophecy/metadata/sqlsources/spark_catalog_qa_database_acl:
-    name: spark_catalog.qa_database_acl
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - prophecy-sources/sources.yml
-    createdAt: '2023-06-08 06:05:57'
-    modifiedAt: '2023-06-08 06:05:57'
-    tables:
-    - name: table_with_read_permission_for_user
-      schema:
-        providerType: databricks
-        fields:
-        - name: a
-          dataType:
-            type: Integer
-      description: null
-      author: abhisheks+e2etests@prophecy.io
-      createdAt: '2023-06-08 06:05:57'
-      modifiedAt: '2023-06-08 06:05:57'
+sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

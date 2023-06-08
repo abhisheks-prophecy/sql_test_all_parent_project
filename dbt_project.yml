@@ -24,3 +24,15 @@ model-paths:
 macro-paths:
 - "macros"
 target-path: "target"
+
+# ==================
+# Variable Configs
+# ==================
+vars:
+  v_project_int: 22
+  v_project_string: asd
+
+# ============
+# Misc
+# ============
+dispatch: []

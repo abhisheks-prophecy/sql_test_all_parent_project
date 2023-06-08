@@ -1,0 +1,34 @@
+code,service_label
+A12,Services
+A1202,Maintenance and repair services n.i.e.
+A1203,Transportation
+A12031,Sea transport
+A120312,Freight
+A120313,Other
+A12032,Air transport
+A120321,Air passenger transport
+A120322,Air freight transport
+A120323,Air other transport
+A12034,Postal and courier services
+A1204,Travel
+A12041,Business travel
+A12042,Personal travel
+A120421,Education related travel
+A120422,Health related travel
+A120423,Other personal travel
+A1205,Construction services
+A1206,Insurance and pension services
+A12062,Reinsurance
+A1207,Financial services
+A12071,Explicitly charged and other financial services
+A120711,Asset management fees
+A120712,Underwriting and placement of securities
+A120713,Financial advisory services
+A120714,Financial transaction processing
+A120715,Other financial services
+A12072,Financial intermediation services indirectly measured (FISIM)
+A1208,Charges for the use of intellectual property n.i.e.
+A12081,Franchises and trademarks licensing fees
+A120811,Revenue/payments from franchise rights
+A120812,Other royalty payments received/made
+A12082,Licenses for the use of outcomes of research and development

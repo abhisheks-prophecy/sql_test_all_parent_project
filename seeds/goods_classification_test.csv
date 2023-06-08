@@ -1,0 +1,28 @@
+NZHSC_Level_2_Code_HS4,NZHSC_Level_1_Code_HS2,NZHSC_Level_2,NZHSC_Level_1,Status_HS4
+0101,01,"Horses, asses, mules and hinnies; live",Animals; live,Current
+0102,01,Bovine animals; live,Animals; live,Current
+0103,01,Swine; live,Animals; live,Current
+0104,01,Sheep and goats; live,Animals; live,Current
+0105,01,"Poultry; live, fowls of the species Gallus domesticus, ducks, geese, turkeys and guinea fowls",Animals; live,Current
+0106,01,"Animals; live, n.e.c. in chapter 01",Animals; live,Current
+0201,02,Meat of bovine animals; fresh or chilled,Meat and edible meat offal,Current
+0202,02,Meat of bovine animals; frozen,Meat and edible meat offal,Current
+0203,02,"Meat of swine; fresh, chilled or frozen",Meat and edible meat offal,Current
+0204,02,"Meat of sheep or goats; fresh, chilled or frozen",Meat and edible meat offal,Current
+0205,02,"Meat; of horses, asses, mules or hinnies, fresh, chilled or frozen",Meat and edible meat offal,Current
+0206,02,"Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies; fresh, chilled or frozen",Meat and edible meat offal,Current
+0207,02,"Meat and edible offal of poultry; of the poultry of heading no. 0105, (i.e. fowls of the species Gallus domesticus), fresh, chilled or frozen",Meat and edible meat offal,Current
+0208,02,"Meat and edible meat offal, n.e.c. in chapter 2; fresh, chilled or frozen",Meat and edible meat offal,Current
+0209,02,"Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked",Meat and edible meat offal,Current
+0210,02,"Meat and edible meat offal; salted, in brine, dried or smoked; edible flours and meals of meat or meat offal",Meat and edible meat offal,Current
+0301,03,Fish; live,"Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0302,03,"Fish; fresh or chilled, excluding fish fillets and other fish meat of heading 0304","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0303,03,"Fish; frozen, excluding fish fillets and other fish meat of heading 0304","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0304,03,"Fish fillets and other fish meat (whether or not minced); fresh, chilled or frozen","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0305,03,"Fish, dried, salted or in brine; smoked fish, whether or not cooked before, or during the smoking process","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0306,03,"Crustaceans; in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; smoked, cooked or not before or during smoking; in shell, steamed or boiled, whether or not chilled, frozen, dried, salted or in brine","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0307,03,"Molluscs; whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; smoked molluscs, whether in shell or not, whether or not cooked before or during the smoking process","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0308,03,"Aquatic invertebrates other than crustaceans and molluscs, live, fresh, chilled, frozen, dried, salted or in brine; smoked aquatic invertebrates other than crustaceans and molluscs, whether or not cooked before or during the smoking process","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0309,03,"Flours, meals and pellets of fish, crustaceans, molluscs and other aquatic invertebrates, fit for human consumption","Fish and crustaceans, molluscs and other aquatic invertebrates",Current
+0401,04,"Milk and cream; not concentrated, not containing added sugar or other sweetening matter","Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",Current
+0402,04,Milk and cream; concentrated or containing added sugar or other sweetening matter,"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",Current

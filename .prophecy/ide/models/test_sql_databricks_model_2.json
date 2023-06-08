@@ -1,0 +1,740 @@
+{
+  "id" : "test_sql_databricks_model_2",
+  "metainfo" : {
+    "label" : "test_sql_databricks_model_2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    }
+  },
+  "processes" : {
+    "cQkrr3ugh_61B_kIjJBmI" : {
+      "id" : "cQkrr3ugh_61B_kIjJBmI",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "goods_classification_test",
+        "slug" : "goods_classification_test",
+        "x" : -600,
+        "y" : -100,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "goods_classification_test",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "pIU-DTQPxHbv7RTWpbQEM",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "d--ezKr1yfVG4MiEcP-5C" : {
+      "id" : "d--ezKr1yfVG4MiEcP-5C",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "service_classification_test",
+        "slug" : "service_classification_test",
+        "x" : -580,
+        "y" : 80,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "service_classification_test",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YqGt_DZoOFJTp5JSyhT81",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "service_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "qUtdQ09tTy_cmoae0uSZ_$$ONobyvRuHEopAqTvRKE42" : {
+      "id" : "qUtdQ09tTy_cmoae0uSZ_$$ONobyvRuHEopAqTvRKE42",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "slug" : "Limit_1",
+        "x" : 20,
+        "y" : 80,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "10"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "duEd9EuVrMA5TheAkAQm3$$a8g6QVlqZx9xg5p441yRp",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_dbt_utils",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_concat_column_function",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "G9DkXaZO2GaZt_WxFNJEc$$BXyaX8mkxDZUtv9ZwuDD_",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_dbt_utils",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_concat_column_function",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "WKADLILy5KFMaw70lvNum$$JpWQQNc852IZdM_gpVTCr" : {
+      "id" : "WKADLILy5KFMaw70lvNum$$JpWQQNc852IZdM_gpVTCr",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "qa_all_not_null_base_1",
+        "slug" : "qa_all_not_null_base_1",
+        "x" : 200,
+        "y" : 100,
+        "phase" : 0,
+        "macroDependencies" : [ "SQL_Parent_All.qa_all_not_null_base" ]
+      },
+      "properties" : {
+        "macroName" : "qa_all_not_null_base",
+        "parameters" : [ {
+          "name" : "model",
+          "value" : "'Limit_1'"
+        }, {
+          "name" : "column_name",
+          "value" : "'Status_HS4'"
+        } ],
+        "projectName" : "SQL_Parent_All"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NGDWpM1ZUyWPIoNl_fwGz",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_dbt_utils",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_concat_column_function",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "Limit_1"
+        } ],
+        "outputs" : [ {
+          "id" : "gKp4Wu3W8O4-SBwWiot4u$$ZhoNK6Yxo8gztjO9SddBa",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_dbt_utils",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_concat_column_function",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "test_sql_databricks_model_2##UPLgJ7bo" : {
+      "id" : "test_sql_databricks_model_2##UPLgJ7bo",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_sql_databricks_model_2",
+        "x" : 440,
+        "y" : 80,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM qa_all_not_null_base_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ROfn7NPr",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_dbt_utils",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_concat_column_function",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "qa_all_not_null_base_1"
+        } ],
+        "outputs" : [ {
+          "id" : "vHcxebQ0",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_dbt_utils",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_concat_column_function",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "4KV8ptIRwvpSe_oMlsln8$$uU4NXC_tRczIvMdPIbJ71" : {
+      "id" : "4KV8ptIRwvpSe_oMlsln8$$uU4NXC_tRczIvMdPIbJ71",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -160,
+        "y" : 60,
+        "phase" : 0,
+        "macroDependencies" : [ "SQL_Parent_All.qa_concat_column" ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "6M5b0OuQbCGbVW3kBLKgL$$3WgacdyGOm7-DWYz5eCej##NZHSC_Level_2_Code_HS4", "6M5b0OuQbCGbVW3kBLKgL$$3WgacdyGOm7-DWYz5eCej##NZHSC_Level_1_Code_HS2", "6M5b0OuQbCGbVW3kBLKgL$$3WgacdyGOm7-DWYz5eCej##NZHSC_Level_2", "6M5b0OuQbCGbVW3kBLKgL$$3WgacdyGOm7-DWYz5eCej##NZHSC_Level_1", "6M5b0OuQbCGbVW3kBLKgL$$3WgacdyGOm7-DWYz5eCej##Status_HS4" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "NZHSC_Level_2_Code_HS4"
+          },
+          "alias" : "NZHSC_Level_2_Code_HS4"
+        }, {
+          "expression" : {
+            "expression" : "NZHSC_Level_1_Code_HS2"
+          },
+          "alias" : "NZHSC_Level_1_Code_HS2"
+        }, {
+          "expression" : {
+            "expression" : "NZHSC_Level_2"
+          },
+          "alias" : "NZHSC_Level_2"
+        }, {
+          "expression" : {
+            "expression" : "NZHSC_Level_1"
+          },
+          "alias" : "NZHSC_Level_1"
+        }, {
+          "expression" : {
+            "expression" : "Status_HS4"
+          },
+          "alias" : "Status_HS4"
+        }, {
+          "expression" : {
+            "expression" : "concat('{{ dbt_utils.pretty_time() }}', '{{ dbt_utils.pretty_log_format(\"my pretty message\") }}')"
+          },
+          "alias" : "c_dbt_utils"
+        }, {
+          "expression" : {
+            "expression" : "{{ SQL_Parent_All.qa_concat_column('NZHSC_Level_1') }}"
+          },
+          "alias" : "c_concat_column_function"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6M5b0OuQbCGbVW3kBLKgL$$3WgacdyGOm7-DWYz5eCej",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TgV3x_iuiQvEQcKo9XQ0m$$TT2-vf6-dpsnY7qK8SaOb",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_dbt_utils",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_concat_column_function",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "zfRCTo15nKl1rJJ9RIjMh$$sLhed0AgDFYW5X_TAcbGi" : {
+      "id" : "zfRCTo15nKl1rJJ9RIjMh$$sLhed0AgDFYW5X_TAcbGi",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : -320,
+        "y" : 60,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : "in0.Status_HS4!=in1.service_label"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "in0.NZHSC_Level_2_Code_HS4"
+          },
+          "alias" : "NZHSC_Level_2_Code_HS4"
+        }, {
+          "expression" : {
+            "expression" : "in0.NZHSC_Level_1_Code_HS2"
+          },
+          "alias" : "NZHSC_Level_1_Code_HS2"
+        }, {
+          "expression" : {
+            "expression" : "in0.NZHSC_Level_2"
+          },
+          "alias" : "NZHSC_Level_2"
+        }, {
+          "expression" : {
+            "expression" : "in0.NZHSC_Level_1"
+          },
+          "alias" : "NZHSC_Level_1"
+        }, {
+          "expression" : {
+            "expression" : "in0.Status_HS4"
+          },
+          "alias" : "Status_HS4"
+        } ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX##Status_HS4", "0oglUdjmPec6d6Ww0tiBl$$RzgDtSjfvtjEwM3lhP2MN##service_label", "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX##NZHSC_Level_2_Code_HS4", "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX##NZHSC_Level_1_Code_HS2", "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX##NZHSC_Level_2", "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX##NZHSC_Level_1", "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX##Status_HS4" ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        }, {
+          "id" : "0oglUdjmPec6d6Ww0tiBl$$RzgDtSjfvtjEwM3lhP2MN",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "service_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "zffp2ZZ--NqHCcOSnL2uu$$dxtw9P_zJLcQ1aIxkUm-z",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "NZHSC_Level_2_Code_HS4",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_1_Code_HS2",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "NZHSC_Level_2",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NZHSC_Level_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Status_HS4",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "_ojS-Ipw5E8MOK789wroB$$4v0IqOw4svYQU5SY7r7Xs",
+    "source" : "d--ezKr1yfVG4MiEcP-5C",
+    "sourcePort" : "YqGt_DZoOFJTp5JSyhT81",
+    "target" : "zfRCTo15nKl1rJJ9RIjMh$$sLhed0AgDFYW5X_TAcbGi",
+    "targetPort" : "0oglUdjmPec6d6Ww0tiBl$$RzgDtSjfvtjEwM3lhP2MN"
+  }, {
+    "id" : "p584gFF9OFCn2IxQL89iH$$7VtZCchOOoKv08yqGN2Bd",
+    "source" : "cQkrr3ugh_61B_kIjJBmI",
+    "sourcePort" : "pIU-DTQPxHbv7RTWpbQEM",
+    "target" : "zfRCTo15nKl1rJJ9RIjMh$$sLhed0AgDFYW5X_TAcbGi",
+    "targetPort" : "pYvuafyRH6I3kMjnc42ln$$YzSKdHBPctOHQypTekBlX"
+  }, {
+    "id" : "s71LamebmosTVB6ecwtIi$$iWJBWv3_g8tflCPiuhGI6",
+    "source" : "zfRCTo15nKl1rJJ9RIjMh$$sLhed0AgDFYW5X_TAcbGi",
+    "sourcePort" : "zffp2ZZ--NqHCcOSnL2uu$$dxtw9P_zJLcQ1aIxkUm-z",
+    "target" : "4KV8ptIRwvpSe_oMlsln8$$uU4NXC_tRczIvMdPIbJ71",
+    "targetPort" : "6M5b0OuQbCGbVW3kBLKgL$$3WgacdyGOm7-DWYz5eCej"
+  }, {
+    "id" : "zGKgmWtMon1L_9cdg_6uH",
+    "source" : "4KV8ptIRwvpSe_oMlsln8$$uU4NXC_tRczIvMdPIbJ71",
+    "sourcePort" : "TgV3x_iuiQvEQcKo9XQ0m$$TT2-vf6-dpsnY7qK8SaOb",
+    "target" : "qUtdQ09tTy_cmoae0uSZ_$$ONobyvRuHEopAqTvRKE42",
+    "targetPort" : "duEd9EuVrMA5TheAkAQm3$$a8g6QVlqZx9xg5p441yRp"
+  }, {
+    "id" : "RFrqystQZNpDpRX8hwPdN$$EWC4kAqdq2A7HqjohFC7W",
+    "source" : "qUtdQ09tTy_cmoae0uSZ_$$ONobyvRuHEopAqTvRKE42",
+    "sourcePort" : "G9DkXaZO2GaZt_WxFNJEc$$BXyaX8mkxDZUtv9ZwuDD_",
+    "target" : "WKADLILy5KFMaw70lvNum$$JpWQQNc852IZdM_gpVTCr",
+    "targetPort" : "NGDWpM1ZUyWPIoNl_fwGz"
+  }, {
+    "id" : "Ow6drqPz2-6Z2kurkelxj",
+    "source" : "WKADLILy5KFMaw70lvNum$$JpWQQNc852IZdM_gpVTCr",
+    "sourcePort" : "gKp4Wu3W8O4-SBwWiot4u$$ZhoNK6Yxo8gztjO9SddBa",
+    "target" : "test_sql_databricks_model_2##UPLgJ7bo",
+    "targetPort" : "ROfn7NPr"
+  } ],
+  "component" : "Model"
+}

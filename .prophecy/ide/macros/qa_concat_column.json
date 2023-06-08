@@ -1,0 +1,47 @@
+{
+  "qa_concat_column" : {
+    "name" : "qa_concat_column",
+    "macroType" : "expression",
+    "definition" : "concat({{param1_column}}, 'hellomain')",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "param1_column",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      } ]
+    },
+    "staleState" : "none"
+  },
+  "round_function_base" : {
+    "name" : "round_function_base",
+    "macroType" : "expression",
+    "definition" : "ROUND({{n1}}, {{scale}})",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "n1",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      }, {
+        "name" : "scale",
+        "kind" : {
+          "type" : "value",
+          "value" : "2"
+        },
+        "optional" : true,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      } ]
+    },
+    "staleState" : "none"
+  }
+}

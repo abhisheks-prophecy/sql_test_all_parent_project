@@ -18,10 +18,325 @@ functions:
   udafs: {}
   expressions: {}
 subgraphs: {}
-sqlModels: {}
-sqlMacros: {}
-sqlSeeds: {}
-sqlSources: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/test_sql_databricks_model_1:
+    name: test_sql_databricks_model_1
+    schema:
+      providerType: Databricks
+      fields:
+      - name: c_tinyint
+        dataType:
+          type: TinyInt
+      - name: c_smallint
+        dataType:
+          type: SmallInt
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_bigint
+        dataType:
+          type: Bigint
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_array
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: city
+            dataType:
+              type: String
+          - name: state
+            dataType:
+              type: String
+          - name: pin
+            dataType:
+              type: Bigint
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/test_sql_databricks_model_1.sql
+    - .prophecy/ide/models/test_sql_databricks_model_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-08 06:00:44'
+    modifiedAt: '2023-06-08 06:00:44'
+  .prophecy/metadata/sqlmodels/test_sql_databricks_model_2:
+    name: test_sql_databricks_model_2
+    schema:
+      providerType: Databricks
+      fields:
+      - name: NZHSC_Level_2_Code_HS4
+        dataType:
+          type: Integer
+      - name: NZHSC_Level_1_Code_HS2
+        dataType:
+          type: Integer
+      - name: NZHSC_Level_2
+        dataType:
+          type: String
+      - name: NZHSC_Level_1
+        dataType:
+          type: String
+      - name: Status_HS4
+        dataType:
+          type: String
+      - name: c_dbt_utils
+        dataType:
+          type: String
+      - name: c_concat_column_function
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/test_sql_databricks_model_2.sql
+    - .prophecy/ide/models/test_sql_databricks_model_2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-08 06:00:49'
+    modifiedAt: '2023-06-08 06:00:49'
+  .prophecy/metadata/sqlmodels/test_sql_databricks_useall:
+    name: test_sql_databricks_useall
+    schema:
+      providerType: Databricks
+      fields:
+      - name: c_tinyint
+        dataType:
+          type: TinyInt
+      - name: c_smallint
+        dataType:
+          type: SmallInt
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_bigint
+        dataType:
+          type: Bigint
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_array
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: city
+            dataType:
+              type: String
+          - name: state
+            dataType:
+              type: String
+          - name: pin
+            dataType:
+              type: Bigint
+      - name: c_if
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/test_sql_databricks_useall.sql
+    - .prophecy/ide/models/test_sql_databricks_useall.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-08 06:00:58'
+    modifiedAt: '2023-06-08 06:00:58'
+sqlMacros:
+  .prophecy/metadata/sqlmacros/qa_all_not_null_base:
+    name: qa_all_not_null_base
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_all_null_base.sql
+    - macros/macros.yml
+    createdAt: '2023-06-08 06:14:04'
+    modifiedAt: '2023-06-08 06:14:04'
+  .prophecy/metadata/sqlmacros/qa_all_null_base:
+    name: qa_all_null_base
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_all_null_base.sql
+    - .prophecy/ide/macros/qa_all_null_base.json
+    - macros/macros.yml
+    createdAt: '2023-06-08 06:11:35'
+    modifiedAt: '2023-06-08 06:11:35'
+  .prophecy/metadata/sqlmacros/qa_concat_column:
+    name: qa_concat_column
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_column.sql
+    - .prophecy/ide/macros/qa_concat_column.json
+    createdAt: '2023-06-08 06:12:24'
+    modifiedAt: '2023-06-08 06:12:24'
+  .prophecy/metadata/sqlmacros/round_function_base:
+    name: round_function_base
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_column.sql
+    createdAt: '2023-06-08 06:13:41'
+    modifiedAt: '2023-06-08 06:13:41'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/goods_classification_test:
+    name: goods_classification_test
+    schema:
+      providerType: Databricks
+      fields:
+      - name: NZHSC_Level_2_Code_HS4
+        dataType:
+          type: Integer
+      - name: NZHSC_Level_1_Code_HS2
+        dataType:
+          type: Integer
+      - name: NZHSC_Level_2
+        dataType:
+          type: String
+      - name: NZHSC_Level_1
+        dataType:
+          type: String
+      - name: Status_HS4
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/goods_classification_test.csv
+    createdAt: '2023-06-08 06:08:37'
+    modifiedAt: '2023-06-08 06:08:37'
+  .prophecy/metadata/sqlseeds/service_classification_test:
+    name: service_classification_test
+    schema:
+      providerType: Databricks
+      fields:
+      - name: code
+        dataType:
+          type: String
+      - name: service_label
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/service_classification_test.csv
+    createdAt: '2023-06-08 06:08:21'
+    modifiedAt: '2023-06-08 06:08:21'
+sqlSources:
+  .prophecy/metadata/sqlsources/spark_catalog_qa_database:
+    name: spark_catalog.qa_database
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-06-08 06:04:41'
+    modifiedAt: '2023-06-08 06:04:41'
+    tables:
+    - name: all_type_non_partitioned
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_tinyint
+          dataType:
+            type: TinyInt
+        - name: c_smallint
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_bigint
+          dataType:
+            type: Bigint
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_array
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: city
+              dataType:
+                type: String
+            - name: state
+              dataType:
+                type: String
+            - name: pin
+              dataType:
+                type: Bigint
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-06-08 06:04:41'
+      modifiedAt: '2023-06-08 06:04:41'
+  .prophecy/metadata/sqlsources/spark_catalog_qa_database_acl:
+    name: spark_catalog.qa_database_acl
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-06-08 06:05:57'
+    modifiedAt: '2023-06-08 06:05:57'
+    tables:
+    - name: table_with_read_permission_for_user
+      schema:
+        providerType: databricks
+        fields:
+        - name: a
+          dataType:
+            type: Integer
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-06-08 06:05:57'
+      modifiedAt: '2023-06-08 06:05:57'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
